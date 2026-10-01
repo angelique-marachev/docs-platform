@@ -3,9 +3,9 @@
   "theme": "mint",
   "name": "Unframe AI OS",
   "colors": {
-    "primary": "#16A34A",
-    "light": "#07C983",
-    "dark": "#15803D"
+    "primary": "#7800FF",
+    "light": "#A45CFF",
+    "dark": "#5E00C7"
   },
   "favicon": "/favicon.svg",
   "navigation": {
@@ -24,21 +24,7 @@
           "platform/data-contract/creating-a-data-contract"
         ]
       }
-    ],
-    "global": {
-      "anchors": [
-        {
-          "anchor": "Documentation",
-          "href": "https://mintlify.com/docs",
-          "icon": "book-open-cover"
-        },
-        {
-          "anchor": "Blog",
-          "href": "https://mintlify.com/blog",
-          "icon": "newspaper"
-        }
-      ]
-    }
+    ]
   },
   "logo": {
     "light": "/logo/light.svg",
@@ -48,14 +34,13 @@
     "links": [
       {
         "label": "Support",
-        "href": "mailto:hi@mintlify.com"
+        "href": "mailto:info@unframe.ai"
+      },
+      {
+        "label": "unframe.ai",
+        "href": "https://www.unframe.ai"
       }
-    ],
-    "primary": {
-      "type": "button",
-      "label": "Dashboard",
-      "href": "https://app.mintlify.com"
-    }
+    ]
   },
   "contextual": {
     "options": [
@@ -69,11 +54,12 @@
       "vscode"
     ]
   },
+  "fonts": {
+    "family": "Poppins"
+  },
   "footer": {
     "socials": {
-      "x": "https://x.com/mintlify",
-      "github": "https://github.com/mintlify",
-      "linkedin": "https://linkedin.com/company/mintlify"
+      "website": "https://www.unframe.ai"
     }
   }
 }
