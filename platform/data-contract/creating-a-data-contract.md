@@ -1,5 +1,5 @@
-# Creating a data contract for agents
-
+---
+title: "Creating a data contract for agents"
 ---
 
 A Data Contract defines the operational data architecture for your AI agents within Unframe AI OS. It acts as a standardized, type-safe schema layer, structured similarly to a database table, that governs the exact format of information agents can retrieve, process, and update across your workflows.
@@ -34,7 +34,7 @@ Data can be imported into a Data Contract using two primary methods:
 4. Click **Add Data Contract**.   
 5. Select the relevant option: **Start from scratch** and **Import from integration**.
 
-   ![Create a data contract](./images/01-create-new-contract.png)  
+   ![Create a data contract](/platform/data-contract/images/01-create-new-contract.png)  
 	
 
 ### Start from scratch
@@ -43,7 +43,7 @@ Select **Start from scratch** to define an entity manually.
 
 1. Enter a name for your entity, for example Candidate or Invoice.
 
-   ![Enter a name](./images/02-enter-name.png)
+   ![Enter a name](/platform/data-contract/images/02-enter-name.png)
 
 2. An entity is preloaded with an auto-generated UUID.   
    > **Note:**  
@@ -54,7 +54,7 @@ Select **Start from scratch** to define an entity manually.
 4. Click **Add field** and select the relevant field type.  
 5. Click the dropdown arrow on a field and click **Edit** to update the field name, field type, or add a description. 
 
-   ![Edit the field](./images/03-edit-field.png)
+   ![Edit the field](/platform/data-contract/images/03-edit-field.png)
 
 6. When you are ready, click **Save and publish**.  
 7. Confirm the action in the popup.

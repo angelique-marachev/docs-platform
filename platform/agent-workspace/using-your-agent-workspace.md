@@ -1,10 +1,10 @@
-# Using your Agent Workspace
-
+---
+title: "Using your Agent Workspace"
 ---
 
 The Agent Workspace serves as your central hub in Unframe AI OS to discover, manage, and execute agents. 
 
-![The agent workspace](./images/01-agent-workspace.png)
+![The agent workspace](/platform/agent-workspace/images/01-agent-workspace.png)
 
 It features a comprehensive list of all agents accessible to you. Within the workspace, you can browse available options, inspect individual agent details, and pin your favorites for quick access. Pinning an agent saves it to your personal set, making it accessible directly from your chat sidebar so you can bypass catalog searches.
 
@@ -41,11 +41,11 @@ Explore the Agent Workspace to discover and pin the required agents. After pinni
 2. Use the search bar to find an agent by name or description, or scroll through the list.  
 3. Select an agent  to open its details.
 
-    ![Agent details side panel](./images/02-open-agent-details.png)
+    ![Agent details side panel](/platform/agent-workspace/images/02-open-agent-details.png)
 
 4. Click **Connect agent**. The agent is added to your pinned set in Char, and a green dot appears on its card to indicate it is pinned.
 
-    ![A pinned agent](./images/03-pinned.png)
+    ![A pinned agent](/platform/agent-workspace/images/03-pinned.png)
 
 If you no longer need an agent pinned, open its details and click **Disconnect** to remove it from your set. This doesn't affect the agent itself, only your personal list.
 
@@ -58,7 +58,7 @@ If you no longer need an agent pinned, open its details and click **Disconnect**
    * **From Chat**: In the side navigation menu, open **Chat**.  
 2. Click the agent dropdown at the bottom of the chat window and select the pinned agent from the list.
 
-    ![Select agent in chat](./images/04-select-agent.png)
+    ![Select agent in chat](/platform/agent-workspace/images/04-select-agent.png)
 
 3. Enter your message in plain language and send it. The agent responds in the conversation the same way the default assistant does. Learn more about [Chat](#using-chat).
 
@@ -86,7 +86,7 @@ A conversation saves automatically as you go; there's no separate save step. You
 
 If an agent requires your confirmation or additional input, such as filling out a form or validating a value before proceeding, it will temporarily pause its execution. A notification will appear as an actionable item in your Chat **Inbox**. 
 
-![Chat Inbox](./images/05-inbox.png)
+![Chat Inbox](/platform/agent-workspace/images/05-inbox.png)
 
 To allow the agent to resume its task, open the notification and submit the requested details or approval.
 

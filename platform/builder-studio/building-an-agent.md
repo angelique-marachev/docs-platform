@@ -1,5 +1,5 @@
-# Building an agent in Builder Studio
-
+---
+title: "Building an agent in Builder Studio"
 ---
 
 Builder Studio is the canvas in Unframe AI OS where you build and publish your own AI agents. An agent is an automated workflow that carries out single or multiple tasks on its own, such as answering questions from a knowledge source, executing workflows and mini-applications for micro use-cases, running on a schedule, or connecting to another tool, without your engineering team building it for you. Builder Studio exists so any Builder-permissioned admin can assemble, test, and publish an agent directly from a visual canvas. This guide walks you through building and publishing an agent.
@@ -59,7 +59,7 @@ Use this for a workflow with any combination of triggers, steps, tools, and MCP 
    2. **Start from scratch**, which opens an empty canvas.  
    3. **Start with a Template**, which opens a library of prebuilt agent templates.
 
-      ![Create a new agent](./images/01-new-agent.png)
+      ![Create a new agent](/platform/builder-studio/images/01-new-agent.png)
 
 ---
 
@@ -104,7 +104,7 @@ MCPs support both personal and global credentials. Personal access requires indi
    Once added, your new MCP will be listed in the **Tools & MCPs** tab in Builder Studio.  
    
 
-    ![MCPs](./images/02-mcps.png)
+    ![MCPs](/platform/builder-studio/images/02-mcps.png)
 
 ---
 
@@ -113,7 +113,7 @@ MCPs support both personal and global credentials. Personal access requires indi
 A trigger is what starts your agent's workflow. 
 
 1. In the side panel, select the relevant trigger: [Schedule](#schedule) or [Chat](#chat). 
-![Select trigger](./images/03-select-trigger.png)
+![Select trigger](/platform/builder-studio/images/03-select-trigger.png)
 
 #### Schedule  {#schedule}
 
@@ -121,7 +121,7 @@ Executes the agent using a custom cron expression or on a recurring basis.
 
 1. Configure the trigger's settings in the side panel.  
    
-    ![Configure schedule](./images/04-configure-schedule.png)
+    ![Configure schedule](/platform/builder-studio/images/04-configure-schedule.png)
 
 * Toggle **Active** on to activate the agent, or off to pause the trigger.   
 * Select **Mode:**   
@@ -139,7 +139,7 @@ Allow users to trigger the workflow directly from a chat session.
 
 1. Configure the trigger's settings in the side panel.  
    
-    ![Configure chat](./images/05-configure-chat.png)
+    ![Configure chat](/platform/builder-studio/images/05-configure-chat.png)
 
 * **Validate chat input before run**: toggle on to ask users for any additional details needed prior to running.
 
@@ -150,7 +150,7 @@ Allow users to trigger the workflow directly from a chat session.
 * **Validation prompt**: guidelines for the LLM to assess if a chat request contains sufficient details to proceed.
 
 To change a trigger type, select the **Action menu (···)** and select **Change trigger type**.  
-![Change trigger](./images/06-change-trigger.png)
+![Change trigger](/platform/builder-studio/images/06-change-trigger.png)
 
 #### Incoming email
 
@@ -187,7 +187,7 @@ After setting up your trigger, build out your workflow:
 
 ### Understanding workflow steps {#understanding-workflow-steps}
 
-![Steps](./images/07-steps.png)
+![Steps](/platform/builder-studio/images/07-steps.png)
 
 #### LLM Agent
 
@@ -234,7 +234,7 @@ Renders data from previous steps as a block, generated with AI or written by han
 
 Temporarily halts workflow execution until a user provides approval, text feedback, or an uploaded document.
 
-![Human in the loop](./images/08-human-in-the-loop.png)
+![Human in the loop](/platform/builder-studio/images/08-human-in-the-loop.png)
 
 * Select what you need from the human under **Human action**:   
   * **Approval**: review and approve or reject  
@@ -320,7 +320,7 @@ Branch is a node that splits a workflow into multiple paths based on conditions 
 1. Open the Branch node's config panel. It starts empty with "No branches set".  
 2. Under **Condition inputs**, choose which prior step's output the conditions should be evaluated against (for example, the output of an AI summary step earlier in the workflow). Only one input source can be toggled on at a time.  
 3. Click **\+ Add branch** to open the Add branch dialog:
-![Branch](./images/09-branch.png)
+![Branch](/platform/builder-studio/images/09-branch.png)
    * **Type**: build a condition. Select a field from the prior step's output, an operator (e.g. Equals), and a value to compare against.   
    * **\+ Add condition**: add another condition to the same branch; multiple conditions are combined with AND/OR logic.  
    * **Then go to**: from the dropdown menu, select which node this branch leads to if its conditions match. Only downstream nodes already on the canvas (or a new node you create from this picker) are valid destinations; you cannot route a branch back to an earlier node in the workflow.  
@@ -366,7 +366,7 @@ Before you publish, confirm your workflow behaves the way you expect.
 3. Evaluate the generated output.  
 4. Select **Show agent profile** to inspect the complete execution trace.
 
-    ![Test agent](./images/10-test-agent.png)
+    ![Test agent](/platform/builder-studio/images/10-test-agent.png)
 
 5. The agent will execute your instructions and present its reply directly within the chat window.  
 6. Inside the agent profile, you can review the overall Status (e.g., Success) alongside a sequential list of executed Steps. Expanding a step reveals its specific details and output.   
@@ -392,7 +392,7 @@ Ensure to re-test your workflow before proceeding:
 
 After publication, your active agent will appear under the **Available** tab in Builder Studio marked as **Published**. You can monitor its status, clone it, or [manage access permissions](#assigning-access-to-a-published-agent) at any time via its **Action menu (···)**.  
 
-![Publish agent](./images/11-publish-agent.png)
+![Publish agent](/platform/builder-studio/images/11-publish-agent.png)
 
 ---
 
@@ -405,13 +405,13 @@ Control who can see and use a published agent. Only the agent's owner can grant 
 3. Select **Assign access**.  
 4. The Assign access dialog box displays a list of users or groups already granted access, each with their permission level. Click the dropdown arrow to change permissions or remove access.
 
-    ![Assign access](./images/12-assign-access.png)
+    ![Assign access](/platform/builder-studio/images/12-assign-access.png)
 
 5. Search for a specific user or group by name in the search bar and click **Invite** to add them. They're added to the list below with **Viewer** access by default.  
 6. Below the invite list, a toggle switches between:  
 * **Restricted**: only the people/groups explicitly listed above can access the agent.  
 * **Public** (everyone): anyone can access it, regardless of the list above.  
-  ![Restricted](./images/13-restricted.png)
+  ![Restricted](/platform/builder-studio/images/13-restricted.png)
 7. Click **Save changes** to apply.
 
 ---
